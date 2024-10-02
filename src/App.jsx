@@ -1,6 +1,6 @@
 
 import './App.css';
-import { createBrowserRouter , RouterProvider   } from 'react-router-dom';
+import { createBrowserRouter , createHashRouter, RouterProvider   } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import Products from "./components/Products/Products"
 
@@ -26,7 +26,7 @@ import { Offline } from 'react-detect-offline';
 
 
 
-const myRouter = createBrowserRouter([
+const myRouter = createHashRouter([
 
   {path : "/" , element :  <Layout />  , children : [
     {path : "" , element : <ProtectedRoute> <Products /> </ProtectedRoute>} , 
