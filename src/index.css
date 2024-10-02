@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+}
+
+*{
+  box-sizing: border-box;
+  text-decoration: none !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+.nav-item > span:first-child{
+  cursor: pointer;
+}
+
+.navbar-nav li i{
+  cursor: pointer;
+}
+
+.main-color{
+  color : #0aad0a !important;
+}
+
+.bg-color{
+  background-color : #0aad0a !important;
+}
+
+.product , .product img{
+  transition: .4s;
+}
+.my-card .product{
+  border: 1px solid #b9eeb9;
+  padding:  10px 15px;
+  border-radius: 5px;
+}
+
+.product:hover{
+ transform: scale(1.05);
+  border-color: #47b447;
+}
+
+@media (max-width:767px){
+  .product:hover{
+    transform: scale(1);
+    
+   }
+}
+
+
+
+.product:hover img {
+  opacity: .6;
+  transform: scale(1.075);
+}
+
+@media (max-width:767px){
+  .product:hover img {
+    opacity: .6;
+    transform: scale(1.025);
+  }
+}
+
+.container .product-row:last-child{
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+}
+
+
+
+
+
+
+
+
+.product-details{
+ padding: 0 20px;
+ 
+}
+
+.product-details img{
+  max-width: 100% !important;
+  width: 300px !important;
+  height: 300px !important;
+  
+}
+
+@media (max-width:767px) {
+  .product-details img{
+    
+    width: 700px !important;
+    
+    
+  }
+}
+
+.gap-22{
+  gap : 22px;
+}
+
+.f-bold{
+  font-weight: bold;
+}
+
+.my-span {
+  color : black;
+}
+
+.grow{
+  flex-grow: 1;
+  text-align: center;
+}
+
+.desc{
+  color: grey;
+  font-size: 17px;
+}
+
+@media (max-width:767px) {
+  .desc{
+    min-width : 200px;
+    font-size: 15px;
+  }
+}
+
+.orders{
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+
+.orders > .order{
+  margin-bottom: 30px;
+}
+
+@media(max-width : 767px) {
+  .orders > .order{
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media(min-width : 768px) {
+  .orders > .order{
+    flex-basis: 48%;
+    
+  }
+}
+
+.my-item{
+  flex-basis: 30%;
+  margin-right: 15px;
+}
+
+
+
+
