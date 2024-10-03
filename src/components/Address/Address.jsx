@@ -11,7 +11,7 @@ function Address() {
 
    async function order(values){
        // console.log("my values" , values);
-     const res = await axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=https://nagysaad.github.io/E-Commerce-App` , {
+     const res = await axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=https://nagysaad.github.io/E-Commerce-App/#` , {
       shippingAddress : values 
      }   ,   {
       headers : { token : localStorage.getItem("userToken")  }
