@@ -72,7 +72,7 @@ function Cart() {
  <h5>Cart Items : {numOfCartItems}</h5>
 
   <div className="d-flex align-items-center gap-22 my-3">
-    <Link to={`/address/${cartId}`} className='btn btn-success bg-color'>Confirm Payment</Link>
+    <Link to={`/address/${cartId}`} className='btn btn-success bg-color'>Confirm</Link>
   <h5>Total Price :  {totalCartPrice} EGP </h5>
   </div>
   <button onClick={ clearCartData } className='btn btn-danger'>Clear Cart</button>
